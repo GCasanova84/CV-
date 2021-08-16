@@ -1,0 +1,9 @@
+.section {
+  padding: 4rem  0;
+  & .text {
+    margin-top: 3rem;
+  }
+  @include screen-view($min-laptop) {
+    padding: 4rem  0 8rem 0;
+  }
+}

@@ -1,0 +1,6 @@
+.main-container {
+  width: 90vw;
+  @include screen-view($min-laptop) {
+    width: 46.5rem;
+  }
+}

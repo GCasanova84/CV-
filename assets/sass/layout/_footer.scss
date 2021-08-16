@@ -1,0 +1,13 @@
+.footer {
+  height: 100vh;
+  padding: 4rem 0;
+  p {
+    margin-top: 2rem;
+  }
+  @include screen-view($min-laptop) {
+    height: 100vh;
+    p {
+      margin-top: 1.5rem;
+    }
+  }
+}

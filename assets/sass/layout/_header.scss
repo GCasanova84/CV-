@@ -1,0 +1,30 @@
+.header {
+  padding: 4rem 0;
+  &__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    & .rrss {
+      line-height: 0.8;
+      width: 8.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+  @include screen-view($min-tablet) {
+    height: 30rem;
+    padding-top: 4rem;
+    &__content {
+      height: 21rem;
+      & .rrss {
+        margin-top: 0;
+      }
+    }
+  }
+  @include screen-view($min-laptop) {
+    height: 100vh;
+    padding-top: 12.5rem;
+    &__content {
+      height: 56.5vh;
+    }
+  }
+}

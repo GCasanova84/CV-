@@ -1,0 +1,16 @@
+a {
+  color: $gray;
+}
+a:hover {
+  color: $gray;
+  opacity: .8;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-size: $medium;
+  font-weight: $fw-bold;
+}
+
+.rrss a {
+  font-size: $xx-large;
+}

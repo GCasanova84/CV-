@@ -1,0 +1,69 @@
+body {
+  font-family: $lato;
+  color: $gray;
+}
+h1 {
+  font-size: $xxx-large;
+  font-weight: $fw-black;
+  @include screen-view($min-laptop) {
+    font-size: $xxxx-large;
+  }
+}
+
+h2 {
+  font-size: $xx-large;
+  font-weight: $fw-black;
+}
+
+h3 {
+  font-size: $large;
+  font-weight: $fw-bold;
+  @include screen-view($min-tablet) {
+    font-size: $x-large;
+  }
+}
+
+h4 {
+  font-size: $medium;
+  font-weight: $fw-regular;
+  white-space: nowrap;
+  @include screen-view($min-tablet) {
+    font-size: $large;
+  }
+}
+
+h5 {
+  font-size: $medium;
+  font-weight: $fw-regular;
+}
+
+#sobremi h5 {
+  font-size: $medium;
+  @include screen-view($min-tablet) {
+    font-size: $small;
+  }
+  @include screen-view($min-laptop) {
+    font-size: $medium;
+  }
+}
+
+#educacion h5 {
+  font-weight: $fw-light;
+}
+
+h1, h3, h4, h5 {
+  line-height: 1;
+  @include screen-view($min-tablet) {
+    line-height: 0.8;
+  }
+}
+
+p {
+  font-size: $medium;
+  font-weight: $fw-light;
+  margin-top: 3rem;
+}
+
+b {
+  color: $black;
+}
