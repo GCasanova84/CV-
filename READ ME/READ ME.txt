@@ -1,0 +1,10 @@
+¿Qué tipo de patrón usaste para el proyecto?
+Utilicé el patrón Layout Shifter
+
+¿Por qué decidiste utilizar este patrón y no otro?
+Porque junto a un sistema de grillas, permite visualizar un elemento 
+con ancho estático y otro con un ancho fluído.
+
+¿Qué tecnología y/o estrategias usarás para que la maqueta sea responsiva? 
+Decidí utilizar 'display: grid', ya que es muy flexible al momento de 
+definir los anchos y altos de las columnas.

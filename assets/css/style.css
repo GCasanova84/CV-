@@ -10828,26 +10828,33 @@ b {
 .wraper {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 6rem 1fr;
 }
 .wraper .grid-item-1 {
-  position: sticky;
-  top: 0px;
+  grid-row: 1/2;
+  position: fixed;
+}
+.wraper .grid-item-2 {
+  grid-row: 2/3;
 }
 @media (min-width: 992px) {
   .wraper {
-    height: 100vh;
     grid-template-columns: 12.5rem 1fr;
+    grid-template-rows: 1fr;
   }
   .wraper .grid-item-1 {
     grid-column: 1/2;
+    grid-row: 1/2;
   }
   .wraper .grid-item-2 {
     grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
 .nav-bar {
   background-color: #7CEA9C;
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
@@ -10883,7 +10890,7 @@ b {
 }
 .nav-bar__container .nav-menu {
   padding-top: 1rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -10898,14 +10905,13 @@ b {
 }
 @media (min-width: 992px) {
   .nav-bar {
-    position: sticky;
-    top: 0px;
+    width: 12.5rem;
     height: 100vh;
     padding-top: 12.5rem;
   }
   .nav-bar__container {
+    width: auto;
     height: 56.5vh;
-    flex-grow: 1;
     flex-flow: column nowrap;
   }
   .nav-bar__container .nav-img {
@@ -10917,17 +10923,10 @@ b {
     display: none;
   }
   .nav-bar__container .nav-menu {
-    width: auto;
     padding-top: 0;
   }
   .nav-bar__container .nav-menu a {
     text-align: center;
-  }
-  .nav-bar__container .nav-menu__item {
-    margin-bottom: 1rem;
-  }
-  .nav-bar__container .nav-menu__item:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -10983,7 +10982,7 @@ b {
 }
 @media (min-width: 992px) {
   .section {
-    padding: 4rem 0 8rem 0;
+    padding: 12.5rem 0 8rem 0;
   }
 }
 
@@ -10996,7 +10995,8 @@ b {
 }
 @media (min-width: 992px) {
   .footer {
-    height: 100vh;
+    height: auto;
+    padding: 12.5rem 0 4rem 0;
   }
   .footer p {
     margin-top: 1.5rem;
@@ -11005,6 +11005,10 @@ b {
 
 .nav-b {
   color: #FFFFFF;
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
   transform: scale(2.5);
 }
 
